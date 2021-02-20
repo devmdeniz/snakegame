@@ -10,7 +10,6 @@ const dreamsForm = document.forms[0];
 const dreamInput = dreamsForm.elements["dream"];
 const dreamsList = document.getElementById("dreams");
 const clearButton = document.querySelector('#clear-dreams');
-
 // request the dreams from our app's sqlite database
 fetch("/getDreams", {})
   .then(res => res.json())
@@ -33,6 +32,7 @@ dreamsForm.onsubmit = event => {
   event.preventDefault();
 
   const data = { dream: dreamInput.value };
+console.log(data)
 
   fetch("/addDream", {
     method: "POST",
