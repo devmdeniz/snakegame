@@ -1,8 +1,10 @@
-        .game-box {
-            text-align:center;   
-        }
-        .game-info {
-            text-align:center; 
-            font-family:arial;
-            line-height:24px;
-        }
+body {
+  background-color: black;
+}
+.marginleft {
+  margin-left: 33%;  
+}
+canvas {
+  border-style: solid;
+  border-color: grey;
+}
