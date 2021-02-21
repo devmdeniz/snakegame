@@ -12,12 +12,14 @@
   <body>
     <canvas id="game" class="marginleft" width="400" height="400"></canvas>
 
-    <form action="system/insert.php" method="post">
+    <form action="system/insert.php" method="post" class="marginleft">
       <input type="text" placeholder="Enter the Score" name="score" required>
       <button type="submit">Save Score</button>
+      </form>
+    
 
-        <details>
-        <summary>IDs and Paragraphs </summary>
+        <details class="marginleft">
+        <summary class= "white">Scores </summary>
             <table>
 <?php
             include("system/connection.php");
@@ -28,11 +30,11 @@
                 $maxnumber = $outputs["id"];
                 $minnumber = 1;
                 while($minnumber <= $maxnumber){
-                $sorgu = $conn -> query("SELECT datas FROM datas WHERE id=$minnumber ORDER BY datas DESC");    
+                $sorgu = $conn -> query("SELECT datas FROM datas WHERE id=$minnumber ORDER BY datas DESC ");    
                         $output = $sorgu->fetch_array();
                         echo
                          "<tr>" .
-                         "<th class='datas'>" .
+                         "<th class='datas white'>" .
                          $output["datas"] .
                          " - [$minnumber] -" .
                          "</th>" .
@@ -47,8 +49,7 @@
 
 
   
-  </form>
-    
+
     <?php
     ?>
     

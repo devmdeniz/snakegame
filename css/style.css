@@ -1,4 +1,9 @@
-
+body {
+  background-color: black;
+}
+.white {
+  color: white;
+}
 .marginleft {
   margin-left: 33%;  
 }
