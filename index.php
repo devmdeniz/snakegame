@@ -53,7 +53,11 @@
         <input pattern="\d*" type="text" placeholder="Score ID" name="deletescore">
         <button type="submit">Delete Score</button>
   </form>
-  
+
+  <form action="system/edit.php" method="post">
+            <input pattern="\d*" type="text" placeholder="Change Score" name="changescore">
+            <input type="text" placeholder="ID" name="changeid">
+        <button type="submit">Change Score By ID</button>
 
     <?php
     ?>
