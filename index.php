@@ -44,13 +44,13 @@
 
 
     <form action="system/insert.php" method="post">
-      <input type="text" placeholder="Enter the Score" name="score" required>
+      <input pattern="\d*" type="text" placeholder="Enter the Score" name="score" required>
       <button type="submit">Save Score</button>
       </form>
     
 
     <form action="system/delete.php" method="post">
-        <input type="text" placeholder="Score ID" name="deletescore">
+        <input pattern="\d*" type="text" placeholder="Score ID" name="deletescore">
         <button type="submit">Delete Score</button>
   </form>
   
