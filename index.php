@@ -47,7 +47,10 @@
             </table>
     </details>
 
-
+    <form action="system/delete.php" method="post">
+        <input type="text" placeholder="Score ID" name="deletescore">
+        <button type="submit">Delete Score</button>
+  </form>
   
 
     <?php
