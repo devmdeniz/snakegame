@@ -11,8 +11,7 @@
   </head>
   <body>
     <canvas id="game" class="marginleft" width="400" height="400"></canvas>
-    
-    
+
     <form action="system/insert.php" method="post">
       <input type="text" placeholder="Enter the Score" name="score" required>
       <button type="submit">Save Score</button>
