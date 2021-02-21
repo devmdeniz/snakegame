@@ -58,7 +58,13 @@
             <input pattern="\d*" type="text" placeholder="Change Score" name="changescore">
             <input type="text" placeholder="ID" name="changeid">
         <button type="submit">Change Score By ID</button>
+                  </form>
 
+        <form action="system/insertbyid.php" method="post">
+            <input pattern="\d*" type="text" placeholder="Create Score" name="score">
+            <input type="text" placeholder="ID" name="createid">
+        <button type="submit">Create Score By ID</button>
+                  </form>
 
     
     
