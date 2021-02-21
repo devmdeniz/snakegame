@@ -59,8 +59,7 @@
             <input type="text" placeholder="ID" name="changeid">
         <button type="submit">Change Score By ID</button>
 
-    <?php
-    ?>
+
     
     
     <script>
