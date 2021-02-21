@@ -3,9 +3,15 @@
     
 
 
+	$id = $conn -> query("SELECT * FROM datas ORDER BY id DESC LIMIT 1");
+	$outputs = $id->fetch_array();
+
+		$maxnumber = $outputs["id"];
+		$number = $maxnumber + 1;
+
     $cp = $_POST["score"];
 
-            $sql = "INSERT INTO datas (datas) VALUES ('$cp')";
+            $sql = "INSERT INTO datas (id, datas) VALUES ($number, '$cp')";
 
         if(mysqli_query($conn, $sql)) {
 			echo "successfull";
