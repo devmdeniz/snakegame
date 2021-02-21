@@ -28,7 +28,7 @@
                 $maxnumber = $outputs["id"];
                 $minnumber = 1;
                 while($minnumber <= $maxnumber){
-                $sorgu = $conn -> query("SELECT datas FROM datas WHERE id=$minnumber");    
+                $sorgu = $conn -> query("SELECT datas FROM datas WHERE id=$minnumber ORDER BY datas DESC");    
                         $output = $sorgu->fetch_array();
                         echo
                          "<tr>" .
