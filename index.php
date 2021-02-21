@@ -16,6 +16,35 @@
       <input type="text" placeholder="Enter the Score" name="score" required>
       <button type="submit">Save Score</button>
 
+        <details>
+        <summary>IDs and Paragraphs </summary>
+            <table>
+<?php
+            include("system/connection.php");
+
+          $id = $conn -> query("SELECT * FROM datas ORDER BY id DESC LIMIT 1");
+            $outputs = $id->fetch_array();
+        
+                $maxnumber = $outputs["id"];
+                $minnumber = 1;
+                while($minnumber <= $maxnumber){
+                $sorgu = $conn -> query("SELECT datas FROM datas WHERE id=$minnumber");    
+                        $output = $sorgu->fetch_array();
+                        echo
+                         "<tr>" .
+                         "<th class='datas'>" .
+                         $output["datas"] .
+                         " - [$minnumber] -" .
+                         "</th>" .
+                         "</tr>";
+                        $minnumber++;
+                    }
+        
+        
+?>
+            </table>
+    </details>
+
 
   
   </form>
