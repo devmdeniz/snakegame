@@ -12,11 +12,6 @@
   <body>
     <canvas id="game" class="marginleft" width="400" height="400"></canvas>
 
-    <form action="system/insert.php" method="post" class="marginleft">
-      <input type="text" placeholder="Enter the Score" name="score" required>
-      <button type="submit">Save Score</button>
-      </form>
-    
 
         <details class="marginleft">
         <summary class= "white">Scores </summary>
@@ -46,6 +41,13 @@
 ?>
             </table>
     </details>
+
+
+    <form action="system/insert.php" method="post">
+      <input type="text" placeholder="Enter the Score" name="score" required>
+      <button type="submit">Save Score</button>
+      </form>
+    
 
     <form action="system/delete.php" method="post">
         <input type="text" placeholder="Score ID" name="deletescore">
