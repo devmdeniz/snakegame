@@ -15,9 +15,9 @@ session_start();
 <body>
 
 <div class="flex-container">
-  <div><h3 style = "margin-left: 5px;"><a href="system/determination.php?mode=dashboard">Dashboard</a></h3></div>
-  <div><h3 style = "margin-left: 20px;">Update</h3></div>
-  <div><h3 style = "margin-left: 20px;">Delete</h3></div>  
+  <div><h3 style = "margin-left: 15px;"><a href="system/determination.php?mode=dashboard">Dashboard</a></h3></div>
+  <div><h3 style = "margin-left: 25px;">Update</h3></div>
+  <div><h3 style = "margin-left: 25px;">Delete</h3></div>  
 </div>
 
 <div class="main">
