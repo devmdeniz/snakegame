@@ -33,9 +33,33 @@ session_start();
 
 	?>
 </div>
+<details>
+<summary>Datas on database</summary>
+<?php
+            include("system/connection.php");
 
+          $id = $conn -> query("SELECT * FROM datas ORDER BY id DESC LIMIT 1");
+            $outputs = $id->fetch_array();
+        
+                $maxnumber = $outputs["id"];
+                $minnumber = 1;
+                while($minnumber <= $maxnumber){
+                $sorgu = $conn -> query("SELECT datas FROM datas WHERE id=$minnumber ORDER BY datas DESC ");    
+                        $output = $sorgu->fetch_array();
+                        echo
+                         "<tr>" .
+                         "<th class='datas white'>" .
+                         $output["datas"] .
+                         " - [$minnumber] -" .
+                         "</th>" .
+                         "</tr>";
+                        $minnumber++;
+                    }
+        
+        
+?>
 
-
+</details>
 
 
 
