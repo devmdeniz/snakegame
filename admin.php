@@ -17,7 +17,7 @@ session_start();
 <div class="flex-container">
   <div><h3 style = "margin-left: 15px;"><a href="system/determination.php?mode=dashboard">Dashboard</a></h3></div>
   <div><h3 style = "margin-left: 25px;"><a href= "system/determination.php?mode=update">Update</a></h3></div>
-  <div><h3 style = "margin-left: 25px;">Delete</h3></div>  
+  <div><h3 style = "margin-left: 25px;"><a href= "system/determination.php?mode=delete">Delete</a></h3></div>  
 </div>
 
 <div class="main">
