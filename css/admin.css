@@ -1,0 +1,23 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.flex-container {
+	display: flex;
+	background-color: DodgerBlue;
+	flex-direction: column;
+	max-width: 12%;  
+	margin-top: 15%
+}
+  
+  .flex-container > div {
+	background-color: #f1f1f1;
+	margin: 6%;
+	padding-right: 15%;
+	padding-top: 15%;
+	padding-bottom: 15%;
+	font-size: 25px;
+  }
+  h1 {
+
+  }
