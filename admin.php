@@ -15,12 +15,24 @@ session_start();
 <body>
 
 <div class="flex-container">
-  <div><h3 style = "margin-left: 5px;">Dashboard</h3></div>
+  <div><h3 style = "margin-left: 5px;"><a href="system/determination.php?mode=dashboard">Dashboard</a></h3></div>
   <div><h3 style = "margin-left: 20px;">Update</h3></div>
   <div><h3 style = "margin-left: 20px;">Delete</h3></div>  
 </div>
 
+<div class="main">
+	<?php
+	
+	if($_SESSION["mode"] == "dashboard") {
+		include("admin/dashboard.php");
+	} else if ($_SESSION["mode"] == "update") {
+		include("admin/update.php");
+	} else {
+		include("admin/delete.php");
+	}
 
+	?>
+</div>
 
 
 
